@@ -38,11 +38,8 @@ class Field {
 
     // Set initial position of hat
     let x, y;
-    do {
-      x = Math.floor(Math.random() * this.width);
-      y = Math.floor(Math.random() * this.height);
-    }
-    while(x === 0 || y === 0);
+      x = Math.floor(Math.random() * (this.width - 1) + 1);
+      y = Math.floor(Math.random() * (this.height - 1) + 1);
     this.field[y][x] = hat;
     return this.field;
   }
@@ -61,11 +58,11 @@ class Field {
       this.printStatus();
       this.ask();
       if (!this.isInBounds()) {
-        console.log('Out of bounds! Game over ( ✜︵✜ )  \n');
+        console.log('Out of bounds! Game over ಠ_ಠ \n');
         playing = false;
         break;
       } else if (this.isHole()) {
-        console.log('You fell down a hole! Game over ( ✜︵✜ ) \n');
+        console.log('You fell down a hole! Game over ಠ_ಠ \n');
         playing = false;
         break;
       } else if (this.isHat()) {

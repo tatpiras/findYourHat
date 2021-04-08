@@ -1,8 +1,8 @@
 {
-  "name": "findYourHat",
+  "name": "findyourhat",
   "version": "1.0.0",
   "description": "",
-  "main": "find-your-hat.js",
+  "main": "findYourHat.js",
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
