@@ -8,5 +8,3 @@ JavaScript / Node.js
 "readline-sync": "^1.4.10" package to allow synchronous terminal input from the user.
 
 ![Demo gif](https://github.com/tatpiras/findYourHat/blob/main/fyh-hat)
-
-![Demo gif](https://github.com/tatpiras/findYourHat/blob/main/fyh-hole)
